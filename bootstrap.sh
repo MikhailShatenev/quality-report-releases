@@ -8,8 +8,8 @@ set -e
 REPO="MikhailShatenev/quality-report-releases"
 VERSION="1.0.0"
 ZIP_URL="https://github.com/$REPO/releases/latest/download/power-quality-report-$VERSION.zip"
-INSTALL_DIR="/opt/gauss-analytics"
-ZIP_TMP="/tmp/gauss-analytics.zip"
+INSTALL_DIR="/opt/power-quality-report"
+ZIP_TMP="/tmp/power-quality-report.zip"
 
 echo "=== Power Quality Report — Установка ==="
 echo ""

@@ -7,8 +7,8 @@ $ErrorActionPreference = "Stop"
 $REPO    = "MikhailShatenev/quality-report-releases"
 $VERSION = "1.0.0"
 $ZIP_URL = "https://github.com/$REPO/releases/latest/download/power-quality-report-$VERSION.zip"
-$INSTALL_DIR = "C:\gauss-analytics"
-$ZIP_TMP = "$env:TEMP\gauss-analytics.zip"
+$INSTALL_DIR = "C:\power-quality-report"
+$ZIP_TMP = "$env:TEMP\power-quality-report.zip"
 
 Write-Host "=== Power Quality Report — Установка ===" -ForegroundColor Cyan
 Write-Host ""
