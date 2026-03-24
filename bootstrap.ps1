@@ -1,4 +1,4 @@
-# Bootstrap: скачать и установить GAUSS Analytics Microservice
+# Bootstrap: скачать и установить Power Quality Report Microservice
 # Запуск одной командой в PowerShell (от имени администратора):
 #   powershell -ExecutionPolicy Bypass -c "iwr https://raw.githubusercontent.com/MikhailShatenev/PowerQualityMicroservice/main/Microservice/bootstrap.ps1 | iex"
 
@@ -10,7 +10,7 @@ $ZIP_URL = "https://github.com/$REPO/releases/latest/download/gauss-analytics-$V
 $INSTALL_DIR = "C:\gauss-analytics"
 $ZIP_TMP = "$env:TEMP\gauss-analytics.zip"
 
-Write-Host "=== GAUSS Analytics — Установка ===" -ForegroundColor Cyan
+Write-Host "=== Power Quality Report — Установка ===" -ForegroundColor Cyan
 Write-Host ""
 Write-Host "Скачивание дистрибутива..."
 Invoke-WebRequest -Uri $ZIP_URL -OutFile $ZIP_TMP -UseBasicParsing

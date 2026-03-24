@@ -1,5 +1,5 @@
 #!/bin/bash
-# Bootstrap: скачать и установить GAUSS Analytics Microservice
+# Bootstrap: скачать и установить Power Quality Report Microservice
 # Запуск одной командой:
 #   curl -fsSL https://raw.githubusercontent.com/MikhailShatenev/PowerQualityMicroservice/main/Microservice/bootstrap.sh | sudo bash
 
@@ -11,7 +11,7 @@ ZIP_URL="https://github.com/$REPO/releases/latest/download/gauss-analytics-$VERS
 INSTALL_DIR="/opt/gauss-analytics"
 ZIP_TMP="/tmp/gauss-analytics.zip"
 
-echo "=== GAUSS Analytics — Установка ==="
+echo "=== Power Quality Report — Установка ==="
 echo ""
 echo "Скачивание дистрибутива..."
 curl -fsSL "$ZIP_URL" -o "$ZIP_TMP"
