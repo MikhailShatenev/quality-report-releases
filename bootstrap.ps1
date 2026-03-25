@@ -1,4 +1,4 @@
-﻿# Bootstrap: скачать и установить Power Quality Report Microservice
+# Bootstrap: скачать и установить Power Quality Report Microservice
 # Запуск одной командой в PowerShell (от имени администратора):
 #   powershell -ExecutionPolicy Bypass -c "iwr https://raw.githubusercontent.com/MikhailShatenev/PowerQualityMicroservice/main/Microservice/bootstrap.ps1 | iex"
 
@@ -22,4 +22,4 @@ Remove-Item $ZIP_TMP -Force
 
 Write-Host "Запуск установщика..."
 Write-Host ""
-& "$INSTALL_DIR\install-windows.ps1"
+powershell -ExecutionPolicy Bypass -File "$INSTALL_DIR\install-windows.ps1"
