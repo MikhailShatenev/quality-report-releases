@@ -10,16 +10,16 @@ $ZIP_URL = "https://github.com/$REPO/releases/latest/download/power-quality-repo
 $INSTALL_DIR = "C:\power-quality-report"
 $ZIP_TMP = "$env:TEMP\power-quality-report.zip"
 
-Write-Host "=== Power Quality Report — Установка ===" -ForegroundColor Cyan
+Write-Host "=== Power Quality Report ===" -ForegroundColor Cyan
 Write-Host ""
-Write-Host "Скачивание дистрибутива..."
+Write-Host "Downloading..."
 Invoke-WebRequest -Uri $ZIP_URL -OutFile $ZIP_TMP -UseBasicParsing
 
-Write-Host "Распаковка в $INSTALL_DIR..."
+Write-Host "Extracting to $INSTALL_DIR..."
 if (Test-Path $INSTALL_DIR) { Remove-Item $INSTALL_DIR -Recurse -Force }
 Expand-Archive -Path $ZIP_TMP -DestinationPath $INSTALL_DIR -Force
 Remove-Item $ZIP_TMP -Force
 
-Write-Host "Запуск установщика..."
+Write-Host "Running installer..."
 Write-Host ""
 powershell -ExecutionPolicy Bypass -File "$INSTALL_DIR\install-windows.ps1"
